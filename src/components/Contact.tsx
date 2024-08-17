@@ -67,8 +67,8 @@ export default function Contact() {
           you how Hachem can transform her companys web experience.
         </p>*/}
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Vous souhaitez transformer l'expérience web de votre entreprise ?
-        N'hésitez pas à me contacter par email,je serai ravi de discuter
+        Vous souhaitez transformer l&#39;expérience web de votre entreprise ?
+        N&#39;hésitez pas à me contacter par email,je serai ravi de discuter
         </p>
         
       </div>
@@ -77,7 +77,7 @@ export default function Contact() {
         <div>
           <h2 className="text-lg font-bold">Contact</h2>
           <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
-          N'hésitez pas à me contacter par email ou par téléphone.
+          N&#39;hésitez pas à me contacter par email ou par téléphone.
           </p>
 
           <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
@@ -288,7 +288,7 @@ export default function Contact() {
               </svg>
 
               <h3 className=" py-5 text-2xl font-medium text-rose-500">
-              Oups, quelque chose s'est mal passé !
+              Oups, quelque chose s&#39;est mal passé !
               </h3>
               {/*/<p className="text-neutral-900 dark:text-neutral-300 md:px-4">
                 {Message}

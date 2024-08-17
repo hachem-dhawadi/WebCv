@@ -11,10 +11,10 @@ export function Hero() {
           {/*<span className="text-rose-500 font-extrabold">Dhawadi</span>*/}
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
-          Je suis étudiant en deuxième cycle d'ingénierie. Actuellement, je suis à la recherche
-           d'une opportunité de stage pour acquérir une expérience professionnelle enrichissante.
+          Je suis étudiant en deuxième cycle d&#39;ingénierie. Actuellement, je suis à la recherche
+           d&#39;une opportunité de stage pour acquérir une expérience professionnelle enrichissante.
             Je suis extrêmement motivé à mettre en pratique mes connaissances et à contribuer 
-            activement au succès de l'entreprise qui m'accueillera en alternance.
+            activement au succès de l&#39;entreprise qui m&#39;accueillera en alternance.
           </p>
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
             <div>
