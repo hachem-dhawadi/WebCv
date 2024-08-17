@@ -67,15 +67,15 @@ export default function Contact() {
           you how Hachem can transform her companys web experience.
         </p>*/}
         <p className="pt-6 pb-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-        Vous souhaitez transformer l&#39;expérience web de votre entreprise ?
-        N&#39;hésitez pas à me contacter par email,je serai ravi de discuter
+         {/*Vous souhaitez transformer l&#39;expérience web de votre entreprise ?
+        N&#39;hésitez pas à me contacter par email,je serai ravi de discuter*/}
         </p>
         
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 pb-16 grid md:grid-cols-2 lg:grid-cols-2 gap-y-8 md:gap-x-8 md:gap-y-8 lg:gap-x-8 lg:gap-y-16">
         <div>
-          <h2 className="text-lg font-bold">Contact</h2>
+          <h2 className="text-lg font-bold"></h2>
           <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
           N&#39;hésitez pas à me contacter par email ou par téléphone.
           </p>

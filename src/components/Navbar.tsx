@@ -77,8 +77,8 @@ export default function Navbar() {
                 </div>
                 
 
-                <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                  {/* Mobile menu button*/}
+                {/*<div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
+                  {/* Mobile menu button
                   <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-neutral-900 dark:text-white ">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
@@ -87,12 +87,12 @@ export default function Navbar() {
                       <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                     )}
                   </Disclosure.Button>
-                </div>
+                </div>*/}
               </div>
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          {/*<Disclosure.Panel className="sm:hidden">
             <div className="space-y-1 px-4 min-h-screen border-t border-neutral-200 dark:border-neutral-700 bg-white dark:bg-neutral-900">
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -116,7 +116,7 @@ export default function Navbar() {
                 </button>
               </Link>
             </div>
-          </Disclosure.Panel>
+          </Disclosure.Panel>*/}
         </>
       )}
     </Disclosure>
