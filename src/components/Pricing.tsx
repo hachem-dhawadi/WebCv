@@ -4,7 +4,7 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 
 const products = [
   {
-    title: "ESPRIT, Tunis, Ghazela — 1er/2ème cycle d'ingénieur (2023-2025)",
+    title: "ESPRIT, Tunis, Ghazela — 1st/2nd cycle of engineering (2023-2025)",
     price: 12,
     currency: "$",
     frecuency: "month",
@@ -20,11 +20,11 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Espace Industriel EL Azib Bizerte-Tunisie. 01/08/2024 au 15/09/2024",
+    title: "Industrial Space EL Azib Bizerte-Tunisia. 01/08/2024 to 15/09/2024",
     price: 120,
     currency: "$",
     frecuency: "year",
-    description: "Intégration de SharePoint avec Microsoft Business Central",
+    description: "Integration of SharePoint with Microsoft Business Central",
     features: [
       "Unlimited vouchers ∞",
       "02 users",
@@ -36,7 +36,7 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Institut d'Etude Technologiques de Bizerte 2022 - 2/3eme année Développement système d'informatique. ",
+    title: "Institute of Technological Studies of Bizerte 2022 - 2nd/3rd year System Development in Computer Science.",
     price: 24,
     currency: "$",
     frecuency: "month",
@@ -53,11 +53,11 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Technoparc El ghazela 2088 Ariana 06/02/2023 au 27/05/2023",
+    title: "Technopark El Ghazela 2088 Ariana 06/02/2023 to 27/05/2023",
     price: 240,
     currency: "$",
     frecuency: "year",
-    description: "Développement d'une application  web et mobile pour la gestion des files d'attente",
+    description: "Development of a web and mobile application for queue management",
     features: [
       "Unlimited vouchers ∞",
       "04 users",
@@ -70,7 +70,7 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Institut d'Etude Technologiques de Bizerte 2021 - 1ére année Technologie de l'Informatique. ",
+    title: "Institute of Technological Studies of Bizerte 2021 - 1st year Information Technology.",
     price: 32,
     currency: "$",
     frecuency: "month",
@@ -89,7 +89,7 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Les Ciments de Bizerte  janv. 2022",
+    title: "Cement Bizerte Jan. 2022",
     price: 320,
     currency: "$",
     frecuency: "year",
@@ -108,7 +108,7 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "Lycée Menzel Jemil, Bizerte Baccalauréat en Sciences Techniques (mention Bien)",
+    title: "Menzel Jemil High School, Bizerte Baccalaureate in Technical Sciences (with Honors)",
     price: 48,
     currency: "$",
     frecuency: "month",
@@ -129,7 +129,7 @@ const products = [
     mostPopular: false,
   },
   {
-    title: "STIR de Bizerte  juil. 2021",
+    title: "STIR of Bizerte July 2021",
     price: 480,
     currency: "$",
     frecuency: "year",
@@ -151,6 +151,7 @@ const products = [
   },
 ];
 
+
 type BillingInterval = "year" | "month";
 
 export default function Pricing() {
@@ -159,7 +160,7 @@ export default function Pricing() {
   return (
     <div className="bg-gray-50 dark:bg-neutral-900" id="pricing">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
-        <h2 className="text-4xl font-bold text-center">Education & Expérience</h2>
+        <h2 className="text-4xl font-bold text-center">Education & Experience</h2>
 
         {/*<p className="pt-6 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
           We have the perfect product for your business, choose the product that
@@ -189,7 +190,7 @@ export default function Pricing() {
                 : "ml-0.5 relative w-1/2 text-neutral-900 dark:text-neutral-400"
             } rounded-md m-1 py-2 whitespace-nowrap sm:w-auto sm:px-8`}
           >
-            Expérience
+            Experience
           </button>
         </div>
       </div>

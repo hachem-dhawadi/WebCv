@@ -11,16 +11,16 @@ export function Hero() {
           {/*<span className="text-rose-500 font-extrabold">Dhawadi</span>*/}
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
-          Je suis étudiant en deuxième cycle d&#39;ingénierie. Actuellement, je suis à la recherche
-           d&#39;une opportunité de stage pour acquérir une expérience professionnelle enrichissante.
-            Je suis extrêmement motivé à mettre en pratique mes connaissances et à contribuer 
-            activement au succès de l&#39;entreprise qui m&#39;accueillera en alternance.
+          I am a second-year engineering student seeking an internship to gain professional
+          experience. I am eager to apply my knowledge and contribute to the success of the
+          company providing this opportunity
+
           </p>
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
             <div>
-              <Link href="DhawadiHachemCv.pdf" target="_blank">
+              <Link href="Hachem_Dhawadi_Resume.pdf" target="_blank">
                 <button className="bg-black dark:bg-white text-white dark:text-black text-base rounded-full px-4 p-2 font-medium">
-                Télécharger CV
+                Download CV
                 </button>
               </Link>
             </div>
@@ -29,9 +29,9 @@ export function Hero() {
 
         <div className="flex items-center mt-2">
           <Image
-            src="/images/hero/hachemcv2.png"
+            src="/user5.gif"
             alt="Image hero description"
-            width={470}
+            width={500}
             height={400}
             quality={75}
             sizes="100vw"

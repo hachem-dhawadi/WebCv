@@ -77,7 +77,7 @@ export default function Contact() {
         <div>
           <h2 className="text-lg font-bold"></h2>
           <p className="max-w-sm mt-4 mb-4 dark:text-neutral-400">
-          N&#39;hésitez pas à me contacter par email ou par téléphone.
+          Feel free to contact me by email or by phone
           </p>
 
           <div className="flex items-center mt-8 space-x-2 text-dark-600 dark:text-neutral-400">
@@ -91,7 +91,7 @@ export default function Contact() {
           </div>
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <FaGithub  className="w-4 h-4" />
-            <a href="https://github.com/HachemDhawadiSE" target="_blank">https://github.com/HachemDhawadiSE</a>
+            <a href="https://github.com/hachem-dhawadi" target="_blank">https://github.com/hachem-dhawadi</a>
           </div>
           <div className="flex items-center mt-2 space-x-2 text-dark-600 dark:text-neutral-400">
             <FaLinkedin  className="w-4 h-4" />
@@ -138,7 +138,7 @@ export default function Contact() {
               <div className="mb-5">
                 <input
                   type="text"
-                  placeholder="Nom & Prénom"
+                  placeholder="Full Name"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900 focus:ring-4 ${
                     errors.name
@@ -146,7 +146,7 @@ export default function Contact() {
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
                   {...register("name", {
-                    required: "Nom et prénom sont obligatoires",
+                    required: "First and last name are required",
                     maxLength: 80,
                   })}
                 />
@@ -164,7 +164,7 @@ export default function Contact() {
                 <input
                   id="email_address"
                   type="email"
-                  placeholder="Adresse e-mail"
+                  placeholder="Email address"
                   // name="email"
                   autoComplete="false"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white rounded-md outline-none dark:placeholder:text-neutral-200 dark:bg-neutral-900   focus:ring-4  ${
@@ -173,10 +173,10 @@ export default function Contact() {
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
                   {...register("email", {
-                    required: "Entrez votre e-mail",
+                    required: "Email adress is required",
                     pattern: {
                       value: /^\S+@\S+$/i,
-                      message: "Veuillez entrer un e-mail valide",
+                      message: "Please enter a valid email",
                     },
                   })}
                 />
@@ -190,13 +190,13 @@ export default function Contact() {
               <div className="mb-3">
                 <textarea
                   // name="message"
-                  placeholder="Votre message"
+                  placeholder="Your Message"
                   className={`w-full px-4 py-3 border-2 placeholder:text-neutral-800 dark:text-white dark:placeholder:text-neutral-200 dark:bg-neutral-900   rounded-md outline-none  h-36 focus:ring-4  ${
                     errors.message
                       ? "border-rose-500 focus:border-rose-500 ring-rose-100 dark:ring-0"
                       : "border-neutral-300 focus:border-neutral-600 ring-neutral-100 dark:border-neutral-600 dark:focus:border-white dark:ring-0"
                   }`}
-                  {...register("message", { required: "Entrez votre message" })}
+                  {...register("message", { required: "Message is required" })}
                 />
                 {errors.message && (
                   <div className="mt-1 text-rose-500">
@@ -231,7 +231,7 @@ export default function Contact() {
                     ></path>
                   </svg>
                 ) : (
-                  "Envoyer le message"
+                  "Send Message"
                 )}
               </button>
             </form>
@@ -288,7 +288,7 @@ export default function Contact() {
               </svg>
 
               <h3 className=" py-5 text-2xl font-medium text-rose-500">
-              Oups, quelque chose s&#39;est mal passé !
+              Oops, something went wrong!
               </h3>
               {/*/<p className="text-neutral-900 dark:text-neutral-300 md:px-4">
                 {Message}
@@ -297,7 +297,7 @@ export default function Contact() {
                 className="mt-6 py-2 px-4 bg-rose-500 rounded-full focus:outline-none text-neutral-100"
                 onClick={() => reset()}
               >
-                Réessayer
+                Try again
               </button>
             </div>
           )}
