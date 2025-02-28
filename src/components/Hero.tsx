@@ -29,7 +29,7 @@ export function Hero() {
 
         <div className="flex items-center mt-2">
           <Image
-            src="/user5.gif"
+            src="/images/hero/user5.gif"
             alt="Image hero description"
             width={500}
             height={400}
