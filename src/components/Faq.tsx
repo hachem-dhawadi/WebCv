@@ -1,64 +1,72 @@
-import { Disclosure } from "@headlessui/react";
-import { ChevronDownIcon } from "@heroicons/react/24/solid";
+import { motion } from "framer-motion";
+import { GlobeAltIcon, HeartIcon } from "@heroicons/react/24/outline";
 
-const faqitems = [
-  {
-    question: "Languages",
-    response: "Arabic | English | French",
-  },
-  {
-    question: "Hobbies",
-    response: "Coding | Technology | Sports",
-  },
-];
+export default function SkillsInterests() {
+  const items = [
+    {
+      title: "Languages",
+      icon: GlobeAltIcon,
+      items: ["Arabic", "English", "French"],
+      color: "from-blue-600 to-blue-400", // Gradient colors
+      textColor: "text-blue-600 dark:text-blue-400",
+      bgColor: "bg-blue-100 dark:bg-blue-900/50"
+    },
+    {
+      title: "Hobbies",
+      icon: HeartIcon,
+      items: ["Coding", "Technology", "Sports"],
+      color: "from-blue-600 to-blue-400", // Gradient colors
+      textColor: "text-blue-600 dark:text-blue-400",
+      bgColor: "bg-blue-100 dark:bg-blue-900/50"
+    },
+  ];
 
-export default function Faq() {
   return (
-    <div
-      className="bg-white dark:bg-neutral-900 w-full px-4 pt-16 pb-16"
-      id="faq"
-    >
-      <h2 className="text-4xl font-bold text-center">
-      Languages & Hobbies
-      </h2>
+    <div className="bg-white dark:bg-neutral-900 w-full px-4 pt-16 pb-16" id="interests">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-x-40 pt-16 pb-16">
+        <h2 className="text-4xl font-bold text-center mb-8">Languages & Hobbies</h2>
 
-      <p className="pt-6 pb-16 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto">
+          {items.map((section, index) => (
+            <motion.div
+              key={section.title}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.1, duration: 0.4 }}
+              whileHover={{ scale: 1.02 }}
+              className="group relative p-8 rounded-3xl bg-white dark:bg-neutral-800 shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              {/* Gradient accent bar */}
+              <div className={`absolute inset-x-0 top-0 h-2 rounded-t-3xl bg-gradient-to-r ${section.color}`} />
+              
+              {/* Header with animated icon */}
+              <div className="flex items-center gap-4 mb-6">
+                <motion.div
+                  whileHover={{ scale: 1.1 }}
+                  className={`p-3 rounded-lg ${section.bgColor}`}
+                >
+                  <section.icon className={`w-8 h-8 ${section.textColor} transition-colors duration-300`} />
+                </motion.div>
+                <h3 className="text-2xl font-semibold dark:text-white">{section.title}</h3>
+              </div>
 
-      </p>
-      <div className="mx-auto w-full max-w-2xl rounded-2xl bg-transparent dark:bg-transparent">
-        {faqitems.map(({ question, response }) => (
-          <div key={question}>
-            <Disclosure>
-              {({ open }) => (
-                <div className="mt-4">
-                  <Disclosure.Button
-                    className={`${
-                      open
-                        ? "bg-neutral-100 dark:bg-neutral-800 hover:bg-neutral-100 rounded-b-none"
-                        : ""
-                    } flex w-full justify-between rounded-lg bg-neutral-100 dark:bg-neutral-800 dark:hover:bg-neutral-800 px-4 py-4 text-left text-base font-medium `}
+              {/* Interactive items */}
+              <div className="flex flex-wrap gap-3">
+                {section.items.map((item) => (
+                  <motion.span
+                    key={item}
+                    whileHover={{ scale: 1.05 }}
+                    className={`px-4 py-2 rounded-full ${section.bgColor} ${section.textColor} 
+                      text-sm font-medium transition-all duration-200 shadow-sm hover:shadow-md 
+                      border border-opacity-10 dark:border-opacity-20`}
                   >
-                    <h2 className="font-semibold">{question}</h2>
-                    <ChevronDownIcon
-                      className={`${
-                        open ? "rotate-180 transition-transform" : ""
-                      } h-5 w-5 flex-shrink-0`}
-                    />
-                  </Disclosure.Button>
-                  <Disclosure.Panel
-                    className={`${
-                      open
-                        ? "px-4 pt-4 pb-2 text-base dark:text-neutral-400"
-                        : ""
-                    } bg-neutral-100 dark:bg-neutral-800 rounded-b-lg`}
-                  >
-                    <p>{response}</p>
-                  </Disclosure.Panel>
-                </div>
-              )}
-            </Disclosure>
-          </div>
-        ))}
+                    {item}
+                  </motion.span>
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </div>
   );

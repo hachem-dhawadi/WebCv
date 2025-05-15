@@ -73,18 +73,55 @@ const customers = [
         href: "https://firebase.google.com/",
         src: "/images/customers/firebase.png",
         alt: "Discord logo",
-    }
+    },
+    {
+        name: "slack",
+        href: "https://www.docker.com/",
+        src: "/images/customers/docker.png",
+        alt: "Slack logo",
+    },
+        {
+        name: "slack",
+        href: "https://www.atlassian.com/fr/software/jira",
+        src: "/images/customers/jir.png",
+        alt: "Slack logo",
+    },
+        {
+        name: "slack",
+        href: "https://github.com/",
+        src: "/images/customers/gito.png",
+        alt: "Slack logo",
+    },
+        {
+        name: "slack",
+        href: "https://www.c-language.org/",
+        src: "/images/customers/c.png",
+        alt: "Slack logo",
+    },
+        {
+        name: "slack",
+        href: "https://isocpp.org/",
+        src: "/images/customers/c+++.png",
+        alt: "Slack logo",
+    },
+        {
+        name: "slack",
+        href: "https://www.arduino.cc/",
+        src: "/images/customers/arduino.png",
+        alt: "Slack logo",
+    },
+
 ]
 
 export default function Customers() {
     return (
         <div className="bg-white dark:bg-neutral-900 w-full px-4 pt-16 pb-16" id="faq">
             <h2 className="text-4xl font-bold text-center">
-            Skills
+                Skills
             </h2>
 
             <p className="pt-6 pb-8 text-base max-w-2xl text-center m-auto dark:text-neutral-400">
-              
+
             </p>
             <div className="mx-auto w-full max-w-4xl bg-white dark:bg-transparent">
                 <div className="text-center justify-center items-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6">

@@ -19,7 +19,9 @@ export function Hero() {
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">
             <div>
               <Link href="Hachem_Dhawadi_Resume.pdf" target="_blank">
-                <button className="bg-black dark:bg-white text-white dark:text-black text-base rounded-full px-4 p-2 font-medium">
+                                <button className="bg-[#2563EB] text-white px-5 py-2 rounded-lg 
+                           shadow-md hover:bg-[#1d4ed8] transition-transform
+                           transform hover:scale-105">
                 Download CV
                 </button>
               </Link>
