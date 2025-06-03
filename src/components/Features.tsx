@@ -6,7 +6,7 @@ import { CheckIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
 
 const projects = [
-    {
+  {
     title: "Mearn stack Application - StudyHub -",
     description:
       "Developing a full-featured Bootcamp learning platform with real-time chat, video meetings, AI assistant, and machine learning integration",
@@ -20,7 +20,7 @@ const projects = [
     gitUrl: "https://github.com/codezella-hub/BootcampAppBack",
     category: ["Web"],
   },
-      {
+  {
     title: "Mean stack Application - Eco -",
     description:
       "Eco is an application based on a microservices architecture using Spring Boot, Spring Cloud, Eureka, Config Server, and potentially Keycloak for security. The project aims to demonstrate the modularity, scalability, and maintainability of a distributed system.",
@@ -34,6 +34,20 @@ const projects = [
     gitUrl: "https://github.com/TuniCoder/Projet_Microservice",
     category: ["Web"],
   },
+    {
+    title: "Flutter Application - CIOK CRM -",
+    description:
+      "Fixing a bug in a client-facing application that allows CIOK customers to track orders and deliveries, place orders remotely",
+    features: [
+      "Lacus eu mauris quisque tortor torquent",
+      "Lorem ipsum dolor sit amet consectetur",
+      "Lacus eu mauris quisque tortor torquent",
+    ],
+    image: "/images/features/ciok.svg",
+    order: true,
+    gitUrl: "https://play.google.com/store/apps/details?id=com.serpi.ciok&hl=fr&pli=1",
+    category: ["Mobile"],
+  },
   {
     title: "JavaFx/Symfony/Flutterflow Application - InnoHire -",
     description:
@@ -44,7 +58,7 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/m2.svg",
-    order: true,
+    order: false,
     gitUrl: "https://github.com/hachem-dhawadi/innoHire-Desktop",
     category: ["Desktop", "Mobile", "Web"],
   },
@@ -58,7 +72,7 @@ const projects = [
       "He endures pains to avoid worse pains",
     ],
     image: "/images/features/m3.svg",
-    order: false,
+    order: true,
     gitUrl: "https://github.com/hachem-dhawadi/Frontend-Web-Development-React.js",
     category: ["Mobile", "Web"],
   },
@@ -72,7 +86,7 @@ const projects = [
       "Consequuntur magni dolores eos qui ratione",
     ],
     image: "/images/features/m14.svg",
-    order: true,
+    order: false,
     gitUrl: "https://github.com/hachem-dhawadi/Connecti",
     category: ["Mobile"],
   },
@@ -86,7 +100,7 @@ const projects = [
       "Consequuntur magni dolores eos qui ratione",
     ],
     image: "/images/features/m9.svg",
-    order: false,
+    order: true,
     gitUrl: "https://www.flutterflow.io/",
     category: ["Mobile"],
   },
@@ -100,11 +114,11 @@ const projects = [
       "Consequuntur magni dolores eos qui ratione",
     ],
     image: "/images/features/pid.svg",
-    order: true,
+    order: false,
     gitUrl: "https://github.com/hachem-dhawadi/LineFollowerPid",
     category: ["Robotics"],
   },
-    {
+  {
     title: "RC Robot",
     description:
       "Development of a Remote-Controlled Car Robot Using a PS4 Controller",
@@ -114,7 +128,7 @@ const projects = [
       "Consequuntur magni dolores eos qui ratione",
     ],
     image: "/images/features/rccar.svg",
-    order: false,
+    order: true,
     gitUrl: "https://github.com/hachem-dhawadi/RC-car",
     category: ["Robotics"],
   },
@@ -125,7 +139,7 @@ export function Features() {
 
   // Define the custom order for categories
   const categoryOrder = ['Web', 'Mobile', 'Desktop', 'Robotics'];
-  
+
   // Get unique categories and sort them according to custom order
   const categories = Array.from(new Set(projects.flatMap(project => project.category)))
     .sort((a, b) => {
@@ -148,11 +162,10 @@ export function Features() {
           <button
             key="all"
             onClick={() => setSelectedCategory(null)}
-            className={`px-4 py-2 rounded-full transition-colors ${
-              !selectedCategory 
+            className={`px-4 py-2 rounded-full transition-colors ${!selectedCategory
                 ? 'bg-blue-600 text-white'
                 : 'bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700'
-            }`}
+              }`}
           >
             All
           </button>
@@ -160,18 +173,17 @@ export function Features() {
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-full transition-colors ${
-                selectedCategory === category
+              className={`px-4 py-2 rounded-full transition-colors ${selectedCategory === category
                   ? 'bg-blue-600 text-white'
                   : 'bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700'
-              }`}
+                }`}
             >
               {category}
             </button>
           ))}
         </div>
 
-       {filteredProjects.map((content) => (
+        {filteredProjects.map((content) => (
           <div
             key={content.title}
             className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-28 items-center mb-12"
@@ -183,7 +195,7 @@ export function Features() {
               <p className="pt-6 pb-6 text-base dark:text-neutral-400">
                 {content.description}
               </p>
-            <Link href={content.gitUrl} target="_blank">
+              <Link href={content.gitUrl} target="_blank">
                 <button className="bg-[#2563EB] text-white px-5 py-2 rounded-lg 
                            shadow-md hover:bg-[#1d4ed8] transition-transform
                            transform hover:scale-105">
