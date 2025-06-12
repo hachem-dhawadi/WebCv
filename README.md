@@ -1,64 +1,91 @@
-# ☄️ Plantilla Halley
+# 🚀 Hachem Dhawadi — Personal Portfolio Website
 
-La plantilla Halley es una Single Page Application (SPA) desarrollada con Next.js, TypeScript y Tailwind CSS. Cuenta con un diseño responsivo que se adapta a diferentes tamaños de pantalla, soporte para temas claro y oscuro, menú de navegación fijo en la parte superior de la pantalla semitransparente, hero principal con mensaje llamativo e imagen destacada, sección de servicios con iconos y descripciones de los servicios ofrecidos, sección de características más destacadas del servicio con una lista de funcionalidades e imágenes, tabla de precios con switch por mes y año, sección de contacto con un formulario de contacto y enlaces a redes sociales, prefooter llamado de acción para confirmar venta, y footer con enlaces principales y links de redes sociales.
+This is a personal portfolio website built using **Next.js**, following Vercel’s recommended structure with the **App Router** and **`src/` directory**, along with **Tailwind CSS** for styling.
 
+The website showcases my education, professional experiences, skills, completed projects, and contact information. It’s optimized for performance, responsive design, and ease of use.
 
-# 🚀 Características
-La plantilla Halley incluye las siguientes características principales:
+---
 
-- 📱 Diseño responsivo que se adapta a diferentes tamaños de pantalla.
-- 🌓 Soporta tema claro y oscuro.
-- 📍 Menú de navegación fijo en la parte superior de la pantalla semitransparente.
-- 🚀 Hero principal, con mensaje llamativo e imagen destacada.
-- 💼 Sección de servicios con iconos y descripciones de los servicios ofrecidos.
-- 🎉 Sección de características más destacadas del servicio con una lista de funcionalidades e imágenes.
-- 💰 Tabla de precios con switch por mes y año.
-- ❓ Menu plegable de preguntas frecuentes.
-- 📞 Sección de contacto con un formulario de contacto y enlaces a redes sociales.
-- 🛍️ Prefooter llamado de acción para confirmar venta.
-- 📄 Footer con enlaces principales y links de redes sociales.
+## 🌟 Features
 
+- 🧑‍💼 Personal introduction with downloadable CV
+- 🎓 Education and experience timeline
+- 🚀 Project portfolio with filters (Web, Mobile, Robotics, etc.)
+- 🛠️ Skills section with technology icons
+- 🌐 Language proficiency and hobbies
+- 📬 Contact form with direct email and social links
+- 📱 Fully responsive design with dark mode support
 
-# 🛠️ Requisitos
-- Node.js (versión 10 o superior)
-- NPM (o Yarn)
-- Conocimientos básicos de Next.js y Tailwind CSS
+---
 
+## 📚 Highlighted Projects
 
-# 📥 Instalación
-1. Clona el repositorio:
+- **StudyHub**  
+  Full-featured MERN stack bootcamp platform with real-time chat, video meetings, AI assistant, and machine learning integration.
 
-````bash
-git clone https://github.com/humberni/halley
-````
-2. Instala las dependencias:
+- **Eco**  
+  Microservices-based application using Spring Boot, Spring Cloud, Eureka, Config Server, and Keycloak.
 
-````bash
+- **CIOK CRM**  
+  Flutter application for customers to track deliveries and place remote orders.
+
+- **InnoHire**  
+  Recruitment management system built with JavaFX, Symfony, and FlutterFlow.
+
+- **Essaf**  
+  Web and mobile app for queue management built using React JS/Native and Laravel.
+
+- **Connecti**  
+  Flutter app for meeting scheduling.
+
+- **Rasem**  
+  Flutter app for student and teacher registration.
+
+- **Line Follower Robot**  
+  Autonomous robot with PID control.
+
+- **RC Robot**  
+  Remote-controlled car robot operated with a PS4 controller.
+
+---
+
+## 🧰 Technologies Used
+
+- React / Next.js (App Router)
+- Tailwind CSS
+- Docker, GitHub, Python
+- Spring Boot, Keycloak, Microservices
+- Flutter, JavaFX, Laravel, Symfony
+- Slack, Discord, Google Play Console
+
+---
+
+## 🌍 Languages & Hobbies
+
+- **Languages**: Arabic, English, French  
+- **Hobbies**: Coding, Technology, Sports
+
+---
+
+## 📞 Contact
+
+Feel free to get in touch with me:
+
+- 📍 Menzel Jemil, Bizerte, Tunisia  
+- 📧 hachemdhawadi1@gmail.com  
+- 🔗 [GitHub](https://github.com/hachem-dhawadi)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/hachem-dhawadi)  
+- 🔗 [Facebook](https://www.facebook.com/hachem.dhawadi)  
+- 📱 +216 26 212 515
+
+---
+
+## 📦 Run Locally
+
+To run the project on your machine:
+
+```bash
+git clone https://github.com/your-username/your-portfolio
+cd your-portfolio
 npm install
-````
-3. Ejecuta la aplicación en modo desarrollo:
-
-````bash
 npm run dev
-````
-4. Abre http://localhost:3000 en tu navegador.
-
-
-# 🤝 Contribución
-Si deseas contribuir a este proyecto, sigue los siguientes pasos:
-
-1. Haz un fork del repositorio.
-2. Crea una nueva rama con tu contribución.
-3. Realiza tus cambios.
-4. Haz un pull request a la rama `main` del repositorio original.
-
-
-# 📄 Licencia
-Este proyecto se encuentra bajo la Licencia MIT.
-
-
-# 💻 Desarrollador
-- Humber Sanchez Nieto
-- https://humbernieto.pro/
-
-¡Gracias por utilizar esta plantilla! Si tienes alguna pregunta o sugerencia, no dudes en crear un issue o contactar al desarrollador principal.
