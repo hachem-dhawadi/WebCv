@@ -71,12 +71,10 @@ The website showcases my education, professional experiences, skills, completed 
 
 Feel free to get in touch with me:
 
-- 📍 Menzel Jemil, Bizerte, Tunisia  
 - 📧 hachemdhawadi1@gmail.com  
 - 🔗 [GitHub](https://github.com/hachem-dhawadi)  
 - 🔗 [LinkedIn](https://www.linkedin.com/in/hachem-dhawadi)  
 - 🔗 [Facebook](https://www.facebook.com/hachem.dhawadi)  
-- 📱 +216 26 212 515
 
 ---
 
