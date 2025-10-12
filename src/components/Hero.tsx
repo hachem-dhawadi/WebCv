@@ -11,9 +11,8 @@ export function Hero() {
           {/*<span className="text-rose-500 font-extrabold">Dhawadi</span>*/}
           </h1>
           <p className="pt-6 text-base w-auto sm:w-10/12 md:w-10/12 dark:text-neutral-400">
-          I am a second-year engineering student seeking an internship to gain professional
-          experience. I am eager to apply my knowledge and contribute to the success of the
-          company providing this opportunity
+         I am a final-year engineering student seeking an internship to gain professional experience.
+          I am eager to apply my knowledge and contribute to the success of the company providing this opportunity.
 
           </p>
           <div className="flex flex-auto pt-10 gap-2 min-w-[350px] justify-center sm:justify-start">

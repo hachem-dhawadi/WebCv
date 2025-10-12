@@ -86,6 +86,12 @@ const customers = [
         src: "/images/customers/jir.png",
         alt: "Slack logo",
     },
+                {
+        name: "discord",
+        href: "https://www.atlassian.com/",
+        src: "/images/customers/confluence.png",
+        alt: "Discord logo",
+    },
         {
         name: "slack",
         href: "https://github.com/",
@@ -110,6 +116,19 @@ const customers = [
         src: "/images/customers/arduino.png",
         alt: "Slack logo",
     },
+            {
+        name: "discord",
+        href: "https://www.python.org/",
+        src: "/images/customers/py.png",
+        alt: "Discord logo",
+    },
+            {
+        name: "discord",
+        href: "https://docs.ros.org/en/humble/index.html",
+        src: "/images/customers/ros22.png",
+        alt: "Discord logo",
+    },
+
 
 ]
 

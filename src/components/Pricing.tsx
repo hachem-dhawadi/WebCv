@@ -5,8 +5,13 @@ import { CheckIcon, AcademicCapIcon, BriefcaseIcon } from "@heroicons/react/24/o
 
 const Table = [
   {
-    title: "ESPRIT, Tunis, Ghazela — 1st/2nd cycle of engineering (2023-2025)",
+    title: "ESPRIT, Tunis, Ghazela — Engineering Program (2023    –2026)",
     frecuency: "month",
+    mostPopular: false,
+  },
+    {
+    title: "Synhive.com France  01/07/2025 to 01/10/2025",
+    frecuency: "year",
     mostPopular: false,
   },
   {

@@ -41,14 +41,7 @@ const services = [
     alt: "Service description",
     size:200
   },
-  {
-    title: "Symfony",
-    description:
-      "vitae iure impedit magni consequuntur nihil consectetur laboriosam perspiciatis",
-    image: "/images/services/6.svg",
-    alt: "Service description",
-    size:100
-  },
+
   {
     title: "React Native",
     description:
