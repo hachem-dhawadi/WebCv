@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon, PlayCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const projects = [
-  {
+  /*{
     title: "Autonomous Robot - SYH -",
     description:
       "Development of an autonomous and remotely controlled robot using ROS2 Humble. The system integrates SLAM (Slam Toolbox), Nav2 for autonomous navigation, ROS2 Control, LiDAR, and a YOLO-based AI for real-time object detection. The robot operates both autonomously and via a React Native mobile app connected through rosbridge_server, allowing remote teleoperation, live camera streaming, GPS tracking, and performance monitoring.",
@@ -22,19 +22,18 @@ const projects = [
       "/images/features/gr.jpg",
       "/images/features/g1.jpg",
       "/images/features/r3.jpg",
-      "/images/features/r2.jpg",  
+      "/images/features/r2.jpg",
       "/images/features/r6.jpg",
       "/images/features/m1.jpg",
       "/images/features/m2.jpg",
       "/images/features/m3.jpg",
       "/images/features/m4.jpg",
     ],
-          videoUrl: "https://www.youtube.com/embed/97OOu0mUy18", // ✅ added this
     image: "/images/features/robot.png",
     order: false,
     gitUrl: "https://github.com/hachem-dhawadi/autonomous-robot", // or your actual repo link
     category: ["Robotics"],
-  },
+  },*/
   {
     title: "Mearn stack Application - StudyHub -",
     description:
@@ -45,7 +44,7 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/study.svg",
-      videoUrl: "https://www.youtube.com/embed/97OOu0mUy18", // ✅ added this
+    videoUrl: "https://www.youtube.com/embed/97OOu0mUy18", // ✅ added this
     order: true,
     gitUrl: "https://github.com/codezella-hub/BootcampAppBack",
     category: ["Web"],
@@ -74,6 +73,15 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/ciok.svg",
+    gallery: [
+      "/images/features/c1.jpg",
+      "/images/features/c2.jpg",
+      "/images/features/c3.jpg",
+      "/images/features/c4.jpg",
+      "/images/features/c5.jpg",
+      "/images/features/c5.jpg",
+      "/images/features/c7.jpg",
+    ],
     order: true,
     gitUrl: "https://play.google.com/store/apps/details?id=com.serpi.ciok&hl=fr&pli=1",
     category: ["Mobile"],
@@ -88,6 +96,16 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/m2.svg",
+    gallery: [
+      "/images/features/deslogin.png",
+      "/images/features/deskclaim.png",
+      "/images/features/deschat.png",
+      "/images/features/fflogin.png",
+      "/images/features/ffregister.png",
+      "/images/features/ffupdate.png",
+      "/images/features/ffchat.png",
+
+    ],
     order: false,
     gitUrl: "https://github.com/hachem-dhawadi/innoHire-Desktop",
     category: ["Desktop", "Mobile", "Web"],
@@ -222,8 +240,8 @@ export function Features() {
           <button
             onClick={() => setSelectedCategory(null)}
             className={`px-4 py-2 rounded-full transition-colors ${!selectedCategory
-                ? "bg-blue-600 text-white"
-                : "bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700"
+              ? "bg-blue-600 text-white"
+              : "bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700"
               }`}
           >
             All
@@ -233,8 +251,8 @@ export function Features() {
               key={category}
               onClick={() => setSelectedCategory(category)}
               className={`px-4 py-2 rounded-full transition-colors ${selectedCategory === category
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700"
+                ? "bg-blue-600 text-white"
+                : "bg-gray-200 dark:bg-neutral-800 hover:bg-gray-300 dark:hover:bg-neutral-700"
                 }`}
             >
               {category}
@@ -323,62 +341,71 @@ export function Features() {
                   <h2 className="text-3xl font-bold mb-3 text-white">{selectedProject.title}</h2>
 
 
-                  {/* Main Image Display with Navigation */}
-               {/* Video or Image Section */}
-{selectedProject.videoUrl ? (
-  // ✅ If project has video, show iframe
-  <div className="relative aspect-video w-full rounded-2xl overflow-hidden shadow-lg mb-6">
-    <iframe
-      src={selectedProject.videoUrl}
-      title={selectedProject.title}
-      className="w-full h-full rounded-2xl"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-  </div>
-) : selectedProject.gallery && selectedProject.gallery.length > 0 ? (
-  // ✅ Else, show image gallery
-  <div className="relative w-full mb-6 overflow-hidden rounded-2xl">
-    <div className="relative aspect-video bg-black/20 rounded-2xl flex items-center justify-center">
-      <Image
-        src={selectedProject.gallery[currentImageIndex]}
-        alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
-        width={800}
-        height={450}
-        className="object-contain rounded-2xl max-h-[400px]"
-      />
+                  {/* Media Carousel (Video + Images) */}
+                  {(selectedProject.videoUrl || selectedProject.gallery?.length) ? (
+                    <div className="relative w-full mb-6 overflow-hidden rounded-2xl">
+                      <div className="relative aspect-video bg-black/20 rounded-2xl flex items-center justify-center">
+                        {/* ✅ Video first (index 0) */}
+                        {selectedProject.videoUrl && currentImageIndex === 0 ? (
+                          <iframe
+                            src={selectedProject.videoUrl}
+                            title={selectedProject.title}
+                            className="w-full h-full rounded-2xl"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          />
+                        ) : (
+                          // ✅ Otherwise show images (offset index by 1 if there's a video)
+                          selectedProject.gallery && (
+                            <Image
+                              src={
+                                selectedProject.videoUrl
+                                  ? selectedProject.gallery[currentImageIndex - 1]
+                                  : selectedProject.gallery[currentImageIndex]
+                              }
+                              alt={`${selectedProject.title} - Image ${currentImageIndex + 1}`}
+                              width={800}
+                              height={450}
+                              className="object-contain rounded-2xl max-h-[400px]"
+                            />
+                          )
+                        )}
 
-      {/* Navigation Arrows */}
-      {selectedProject.gallery.length > 1 && (
-        <>
-          {currentImageIndex > 0 && (
-            <button
-              onClick={prevImage}
-              className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
-            >
-              <ChevronLeftIcon className="h-6 w-6" />
-            </button>
-          )}
-          {currentImageIndex < selectedProject.gallery.length - 1 && (
-            <button
-              onClick={nextImage}
-              className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
-            >
-              <ChevronRightIcon className="h-6 w-6" />
-            </button>
-          )}
-        </>
-      )}
+                        {/* ✅ Navigation Arrows */}
+                        {(() => {
+                          const totalSlides =
+                            (selectedProject.videoUrl ? 1 : 0) +
+                            (selectedProject.gallery?.length || 0);
+                          return totalSlides > 1 ? (
+                            <>
+                              {currentImageIndex > 0 && (
+                                <button
+                                  onClick={() => setCurrentImageIndex((prev) => prev - 1)}
+                                  className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                                >
+                                  <ChevronLeftIcon className="h-6 w-6" />
+                                </button>
+                              )}
+                              {currentImageIndex < totalSlides - 1 && (
+                                <button
+                                  onClick={() => setCurrentImageIndex((prev) => prev + 1)}
+                                  className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full transition-all"
+                                >
+                                  <ChevronRightIcon className="h-6 w-6" />
+                                </button>
+                              )}
+                              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
+                                {currentImageIndex + 1} / {totalSlides}
+                              </div>
+                            </>
+                          ) : null;
+                        })()}
+                      </div>
+                    </div>
+                  ) : (
+                    <p className="text-gray-400 mb-6">No demo available.</p>
+                  )}
 
-      {/* Image Counter */}
-      <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/50 text-white px-3 py-1 rounded-full text-sm">
-        {currentImageIndex + 1} / {selectedProject.gallery.length}
-      </div>
-    </div>
-  </div>
-) : (
-  <p className="text-gray-400 mb-6">No demo available.</p>
-)}
 
 
 
