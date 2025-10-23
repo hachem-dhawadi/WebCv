@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ChevronLeftIcon, ChevronRightIcon, PlayCircleIcon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const projects = [
-  /*{
+  {
     title: "Autonomous Robot - SYH -",
     description:
       "Development of an autonomous and remotely controlled robot using ROS2 Humble. The system integrates SLAM (Slam Toolbox), Nav2 for autonomous navigation, ROS2 Control, LiDAR, and a YOLO-based AI for real-time object detection. The robot operates both autonomously and via a React Native mobile app connected through rosbridge_server, allowing remote teleoperation, live camera streaming, GPS tracking, and performance monitoring.",
@@ -18,26 +18,26 @@ const projects = [
       "Developed a React Native app for remote teleoperation and live monitoring",
       "Deployed on real hardware powered by Raspberry Pi 4B",
     ],
+              videoUrl: "/images/features/demogr.mp4", // ✅ added this
     gallery: [
       "/images/features/gr.jpg",
       "/images/features/g1.jpg",
       "/images/features/r3.jpg",
       "/images/features/r2.jpg",
-      "/images/features/r6.jpg",
-      "/images/features/m1.jpg",
-      "/images/features/m2.jpg",
-      "/images/features/m3.jpg",
-      "/images/features/m4.jpg",
+      "/images/features/mb1.png",
+      "/images/features/mb2.png",
+      "/images/features/mb3.png",
+      "/images/features/mb4.png",
     ],
     image: "/images/features/robot.png",
     order: false,
-    gitUrl: "https://github.com/hachem-dhawadi/autonomous-robot", // or your actual repo link
+    gitUrl: "", // or your actual repo link
     category: ["Robotics"],
-  },*/
+  },
   {
     title: "Mearn stack Application - StudyHub -",
     description:
-      "Developing a full-featured Bootcamp learning platform with real-time chat, video meetings, AI assistant, and machine learning integration",
+      "StudyHub demonstrates the power of combining full-stack development, AI, and machine learning to create a modern, scalable, and interactive bootcamp learning platform. By integrating real-time chat, video meetings, AI-assisted evaluations, and role-based dashboards, the platform not only streamlines course management but also enhances personalized learning and collaboration. This project reflects our commitment to innovation in education, delivering a professional, production-ready solution that bridges technology and effective learning.",
     features: [
       "Lacus eu mauris quisque tortor torquent",
       "Lorem ipsum dolor sit amet consectetur",
@@ -59,6 +59,13 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/eco.svg",
+               gallery: [
+      "/images/features/c1.png",
+      "/images/features/c2.png",
+      "/images/features/c3.png",
+      "/images/features/c4.png",
+
+    ],
     order: false,
     gitUrl: "https://github.com/TuniCoder/Projet_Microservice",
     category: ["Web"],
@@ -73,6 +80,7 @@ const projects = [
       "Lacus eu mauris quisque tortor torquent",
     ],
     image: "/images/features/ciok.svg",
+
     gallery: [
       "/images/features/c1.jpg",
       "/images/features/c2.jpg",
@@ -89,7 +97,7 @@ const projects = [
   {
     title: "JavaFx/Symfony/Flutterflow Application - InnoHire -",
     description:
-      "Development of a cross-platform application for recruitment management",
+      "Developed a cross-platform recruitment management application, featuring candidate profile management, automated interview scheduling, and real-time status tracking to optimize hiring workflows and enhance the overall recruitment experience.",
     features: [
       "Lacus eu mauris quisque tortor torquent",
       "Lorem ipsum dolor sit amet consectetur",
@@ -113,53 +121,100 @@ const projects = [
   {
     title: "React Js/Native/Laravel Application - Essaf -",
     description:
-      "Development of a Web and Mobile application for queue management",
+      "Developed an integrated web and mobile application for queue management, incorporating features such as real-time queue tracking, appointment scheduling, and notifications to enhance operational efficiency and improve user experience.",
     features: [
       "But I must explain to you how all this mistaken",
       "Voluptatum deleniti atque corrupti quos",
       "He endures pains to avoid worse pains",
+    ],
+    gallery: [
+      "/images/features/wpfe2.png",
+      "/images/features/wpfe0.png",
+      "/images/features/wpfe1.png",
+      "/images/features/mpfe1.png",
+      "/images/features/mpfe2.png",
+      "/images/features/mpfe3.png",
+      "/images/features/mpfe4.png",
+      "/images/features/mpfe5.png",
+      "/images/features/mpfe6.png",
+      "/images/features/wpfe5.png",
+      "/images/features/wpfe4.png",
+      "/images/features/wpfe6.png",
+      "/images/features/wpfe7.png",
+      "/images/features/wpfe8.png",
+      "/images/features/wpfe9.png",
+      "/images/features/wpfe10.png",
+      "/images/features/wpfe11.png",
+
     ],
     image: "/images/features/m3.svg",
     order: true,
     gitUrl: "https://github.com/hachem-dhawadi/Frontend-Web-Development-React.js",
     category: ["Mobile", "Web"],
   },
-  {
-    title: "Flutter Application - Connecti -",
-    description:
-      "Development of a Mobile application for meeting scheduling.",
-    features: [
-      "Sed ut perspiciatis unde omnis iste natus",
-      "Quis autem vel eum iure reprehenderit",
-      "Consequuntur magni dolores eos qui ratione",
-    ],
-    image: "/images/features/m14.svg",
-    order: false,
-    gitUrl: "https://github.com/hachem-dhawadi/Connecti",
-    category: ["Mobile"],
-  },
-  {
+    {
     title: "Flutter Application - Rasem -",
     description:
-      "Development of a Mobile application for teacher and student registration.",
+      "Designed and developed a mobile application that facilitates interaction between teachers and students through course sharing and post publication.",
     features: [
       "Sed ut perspiciatis unde omnis iste natus",
       "Quis autem vel eum iure reprehenderit",
       "Consequuntur magni dolores eos qui ratione",
     ],
     image: "/images/features/m9.svg",
-    order: true,
+    gallery: [
+      "/images/features/login.jpg",
+      "/images/features/register.jpg",
+      "/images/features/email.jpg",
+      "/images/features/acc1.jpg",
+      "/images/features/acc2.jpg",
+      "/images/features/acc3.jpg",
+      "/images/features/notes.jpg",
+      "/images/features/pdf1.jpg",
+      "/images/features/pdf2.jpg",
+      "/images/features/profil.jpg",
+
+    ],
+    order: false,
     gitUrl: "https://www.flutterflow.io/",
     category: ["Mobile"],
-  },
+  },  
   {
-    title: "Line Follower Robot",
+    title: "React Native Application - Connecti -",
     description:
-      "Development of a Line Follower Robot with PID control",
+      "Designed and implemented a mobile application for e-learning, incorporating features such as course sharing, post updates, and interactive engagement tools to improve the learning experience for both teachers and students.",
     features: [
       "Sed ut perspiciatis unde omnis iste natus",
       "Quis autem vel eum iure reprehenderit",
       "Consequuntur magni dolores eos qui ratione",
+    ],
+       gallery: [
+      "/images/features/p1.jpg",
+      "/images/features/p2.jpg",
+      "/images/features/p3.jpg",
+      "/images/features/p4.jpg",
+            "/images/features/p5.jpg",
+
+    ],
+    image: "/images/features/m14.svg",
+    order: true,
+    gitUrl: "https://github.com/hachem-dhawadi/Connecti",
+    category: ["Mobile"],
+  },
+
+  {
+    title: "Line Follower Robot",
+    description:
+      "Designed and implemented a Line Follower Robot equipped with PID (Proportional-Integral-Derivative) control to achieve accurate path tracking, improve stability, and optimize response to varying track conditions.",
+    features: [
+      "Sed ut perspiciatis unde omnis iste natus",
+      "Quis autem vel eum iure reprehenderit",
+      "Consequuntur magni dolores eos qui ratione",
+    ],
+           gallery: [
+      "/images/features/pid.jpg",
+
+
     ],
     image: "/images/features/pid.svg",
     order: false,
@@ -169,11 +224,15 @@ const projects = [
   {
     title: "RC Robot",
     description:
-      "Development of a Remote-Controlled Car Robot Using a PS4 Controller",
+      "Developed a four-wheel-drive remote-controlled car robot with universal remote control compatibility. The project included integration of motor drivers, remote communication protocols, and control logic to ensure smooth and accurate navigation across various terrains.",
     features: [
       "Sed ut perspiciatis unde omnis iste natus",
       "Quis autem vel eum iure reprehenderit",
       "Consequuntur magni dolores eos qui ratione",
+    ],
+           gallery: [
+      "/images/features/rc1.jpg",
+
     ],
     image: "/images/features/rccar.svg",
     order: true,
@@ -183,11 +242,14 @@ const projects = [
 ];
 
 
+
 export function Features() {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [selectedProject, setSelectedProject] = useState<any | null>(null);
   const [activeImage, setActiveImage] = useState<string | null>(null);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [showGitHubModal, setShowGitHubModal] = useState(false);
+  const [githubModalProject, setGithubModalProject] = useState<any | null>(null);
   const galleryRef = useRef<HTMLDivElement>(null);
 
   const categoryOrder = ['Web', 'Mobile', 'Desktop', 'Robotics'];
@@ -206,7 +268,7 @@ export function Features() {
   const scrollGallery = (direction: 'left' | 'right') => {
     if (!galleryRef.current) return;
 
-    const scrollAmount = 300; // Adjust this value based on your image width + gap
+    const scrollAmount = 300;
     if (direction === 'left') {
       galleryRef.current.scrollLeft -= scrollAmount;
     } else {
@@ -227,6 +289,13 @@ export function Features() {
       setCurrentImageIndex((prev) =>
         prev === 0 ? selectedProject.gallery.length - 1 : prev - 1
       );
+    }
+  };
+
+  const handleViewProject = (project: any) => {
+    if (!project.gitUrl) {
+      setGithubModalProject(project);
+      setShowGitHubModal(true);
     }
   };
 
@@ -277,11 +346,20 @@ export function Features() {
               </p>
 
               <div className="flex gap-3">
-                <Link href={content.gitUrl} target="_blank">
-                  <button className="bg-[#2563EB] text-white px-5 py-2 rounded-lg shadow-md hover:bg-[#1d4ed8] transition-transform transform hover:scale-105">
+                {content.gitUrl ? (
+                  <Link href={content.gitUrl} target="_blank">
+                    <button className="bg-[#2563EB] text-white px-5 py-2 rounded-lg shadow-md hover:bg-[#1d4ed8] transition-transform transform hover:scale-105">
+                      View Project
+                    </button>
+                  </Link>
+                ) : (
+                  <button 
+                    onClick={() => handleViewProject(content)}
+                    className="bg-[#2563EB] text-white px-5 py-2 rounded-lg shadow-md hover:bg-[#1d4ed8] transition-transform transform hover:scale-105"
+                  >
                     View Project
                   </button>
-                </Link>
+                )}
 
                 <button
                   onClick={() => setSelectedProject(content)}
@@ -312,7 +390,7 @@ export function Features() {
           </div>
         ))}
 
-        {/* Modern Modal */}
+        {/* Demo Modal */}
         <AnimatePresence>
           {selectedProject && (
             <motion.div
@@ -340,12 +418,11 @@ export function Features() {
                 <div className="flex flex-col items-center text-center">
                   <h2 className="text-3xl font-bold mb-3 text-white">{selectedProject.title}</h2>
 
-
                   {/* Media Carousel (Video + Images) */}
                   {(selectedProject.videoUrl || selectedProject.gallery?.length) ? (
                     <div className="relative w-full mb-6 overflow-hidden rounded-2xl">
                       <div className="relative aspect-video bg-black/20 rounded-2xl flex items-center justify-center">
-                        {/* ✅ Video first (index 0) */}
+                        {/* Video first (index 0) */}
                         {selectedProject.videoUrl && currentImageIndex === 0 ? (
                           <iframe
                             src={selectedProject.videoUrl}
@@ -355,7 +432,7 @@ export function Features() {
                             allowFullScreen
                           />
                         ) : (
-                          // ✅ Otherwise show images (offset index by 1 if there's a video)
+                          // Otherwise show images (offset index by 1 if there's a video)
                           selectedProject.gallery && (
                             <Image
                               src={
@@ -371,7 +448,7 @@ export function Features() {
                           )
                         )}
 
-                        {/* ✅ Navigation Arrows */}
+                        {/* Navigation Arrows */}
                         {(() => {
                           const totalSlides =
                             (selectedProject.videoUrl ? 1 : 0) +
@@ -406,18 +483,98 @@ export function Features() {
                     <p className="text-gray-400 mb-6">No demo available.</p>
                   )}
 
-
-
-
                   <div className="mt-8 flex flex-wrap justify-center gap-3">
-                    <Link href={selectedProject.gitUrl} target="_blank">
-                      <button className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-2 rounded-xl shadow-md hover:scale-105 transition-transform">
+                    {selectedProject.gitUrl ? (
+                      <Link href={selectedProject.gitUrl} target="_blank">
+                        <button className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-2 rounded-xl shadow-md hover:scale-105 transition-transform">
+                          View Source Code
+                        </button>
+                      </Link>
+                    ) : (
+                      <button 
+                        onClick={() => {
+                          setSelectedProject(null);
+                          setGithubModalProject(selectedProject);
+                          setShowGitHubModal(true);
+                        }}
+                        className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-2 rounded-xl shadow-md hover:scale-105 transition-transform"
+                      >
                         View Source Code
                       </button>
-                    </Link>
+                    )}
                     <button
                       onClick={() => setSelectedProject(null)}
                       className="bg-white/10 border border-gray-400/20 text-white px-5 py-2 rounded-xl hover:bg-white/20 transition-transform hover:scale-105"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* GitHub Private Repository Modal */}
+        <AnimatePresence>
+          {showGitHubModal && githubModalProject && (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center z-50 p-4"
+              onClick={() => setShowGitHubModal(false)}
+            >
+              <motion.div
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                transition={{ type: "spring", stiffness: 120 }}
+                className="relative bg-white/10 dark:bg-neutral-900/90 backdrop-blur-xl rounded-3xl shadow-2xl p-6 md:p-10 max-w-2xl w-full border border-gray-200/20 dark:border-neutral-700/30 overflow-hidden"
+                onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
+              >
+                <button
+                  onClick={() => setShowGitHubModal(false)}
+                  className="absolute top-5 right-5 text-gray-400 hover:text-white z-10"
+                >
+                  <XMarkIcon className="h-6 w-6" />
+                </button>
+
+                <div className="flex flex-col items-center text-center">
+                  {/* Security Icon */}
+                  <div className="mb-6 p-4 bg-yellow-500/20 rounded-full">
+                    <svg className="h-12 w-12 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    </svg>
+                  </div>
+
+                  <h2 className="text-3xl font-bold mb-4 text-white">Private Repository</h2>
+                  
+                  <div className="mb-6">
+                    <h3 className="text-xl font-semibold text-yellow-400 mb-2">
+                      {githubModalProject.title}
+                    </h3>
+                    <p className="text-gray-300 text-sm mb-4">
+                      This repository is kept private due to confidentiality and intellectual property protection.
+                    </p>
+                    <div className="bg-black/30 rounded-xl p-4 border border-yellow-500/30">
+                      <p className="text-yellow-200 text-xs">
+                        The source code contains proprietary algorithms, sensitive implementation details, 
+                        and confidential project information that cannot be publicly shared.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 flex flex-wrap justify-center gap-3">
+                    <button
+                      onClick={() => setShowGitHubModal(false)}
+                      className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-xl shadow-md hover:scale-105 transition-transform"
+                    >
+                      Understood
+                    </button>
+                    <button
+                      onClick={() => setShowGitHubModal(false)}
+                      className="bg-white/10 border border-gray-400/20 text-white px-6 py-3 rounded-xl hover:bg-white/20 transition-transform hover:scale-105"
                     >
                       Close
                     </button>

@@ -10,7 +10,7 @@ const Table = [
     mostPopular: false,
   },
     {
-    title: "  01/07/2025 to 01/10/2025",
+    title: "Synhive.com France (Remote) 01/07/2025 to 01/10/2025",
     frecuency: "year",
     mostPopular: false,
   },
