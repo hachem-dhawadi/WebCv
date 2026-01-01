@@ -70,7 +70,7 @@ export default function Timeline() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl font-bold text-center mb-8">
-            Education & Experience
+            Education & internship
           </h2>
         </motion.div>
 
@@ -101,7 +101,7 @@ export default function Timeline() {
               }`}
             >
               <BriefcaseIcon className="w-5 h-5" />
-              Experience
+              internship
             </button>
           </motion.div>
 
@@ -137,7 +137,7 @@ export default function Timeline() {
                         </h3>
                         <div className="mt-2 flex items-center gap-2">
                           <span className="px-2 py-1 text-sm bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-300 rounded-full">
-                            {item.frecuency === "month" ? "Education" : "Experience"}
+                            {item.frecuency === "month" ? "Education" : "internship"}
                           </span>
                         </div>
                       </div>

@@ -4,15 +4,9 @@ import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  "/images/features/gr.jpg",
-  "/images/features/g1.jpg",
-  "/images/features/r3.jpg",
-  "/images/features/r2.jpg",
-  "/images/features/r6.jpg",
-  "/images/features/m1.jpg",
-  "/images/features/m2.jpg",
-  "/images/features/m3.jpg",
-  "/images/features/m4.jpg",
+  "/images/features/aws.png",
+  "/images/features/blockchain.png",
+
 ];
 
 export function Services() {
@@ -37,7 +31,7 @@ export function Services() {
 
   return (
     <div className="relative bg-white dark:bg-neutral-900 w-full flex flex-col items-center justify-center py-14">
-      <h2 className="text-4xl font-bold text-center mb-8">Events</h2>
+      <h2 className="text-4xl font-bold text-center mb-8">Certifications</h2>
 
       {/* Carousel container */}
       <div className="relative w-full max-w-6xl overflow-hidden rounded-3xl shadow-2xl">

@@ -35,7 +35,7 @@ const projects = [
     category: ["Robotics"],
   },
   {
-    title: "Mearn stack Application - StudyHub -",
+    title: "Mern stack Application - StudyHub -",
     description:
       "StudyHub demonstrates the power of combining full-stack development, AI, and machine learning to create a modern, scalable, and interactive bootcamp learning platform. By integrating real-time chat, video meetings, AI-assisted evaluations, and role-based dashboards, the platform not only streamlines course management but also enhances personalized learning and collaboration. This project reflects our commitment to innovation in education, delivering a professional, production-ready solution that bridges technology and effective learning.",
     features: [

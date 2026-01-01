@@ -13,8 +13,9 @@ export default function Home() {
       <Hero />
       <Pricing />
       <Customers />
-      {/* Hero section <Services /> */}
+
       <Features />
+              <Services /> 
       <Faq />
       <Contact />
     </Layout>
